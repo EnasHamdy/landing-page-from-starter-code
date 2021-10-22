@@ -24,10 +24,8 @@
 */
 // Create a variable to hold all sections in the page.
 const allSections = document.querySelectorAll("section");
-
 // Get Navbar menu list.
 let navbarMenuList = document.querySelector("#navbar__list");
-
 // Set the delay time before hiding the navigation bar.
 let timer = null;
 
@@ -42,12 +40,13 @@ let timer = null;
  * @param {*} secElement is the element to check its visibility
  * @returns the result of check : boolean
  */
+
 function isInView(secElement){  
     // 1 - Get the bounds of the element
     var bounding = secElement.getBoundingClientRect();
     // 2 - Check if the element is in the viewport or not
     if (
-        (bounding.top >= 0) &&
+        bounding.top >= 0 &&
         bounding.left >= 0 &&
         bounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
         bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
@@ -71,16 +70,13 @@ function isInView(secElement){
 function buildNavBar(){
     for (let i = 0; i < allSections.length; i++){
         // 1 - Create li: Navbar list item
-        const newListItem = document.createElement("li");
-        
+        const newListItem = document.createElement("li");        
         // 2 - Create a: list item anchor link and set its attributes
-        const newLink = document.createElement("a");    
+        const newLink = document.createElement("a");
         newLink.innerText = allSections[i].getAttribute("data-nav");
         newLink.className = "menu__link";
-
         // 3 - Append link to li
         newListItem.appendChild(newLink);
-
         // 4 - Append li to ul
         navbarMenuList.appendChild(newListItem);    
     }
@@ -153,7 +149,7 @@ function createToTopButton(){
     // 3 - Set button text
     toTopBtn.innerText = "Top"; 
     // 4 - Set styles of the button
-    toTopBtn.setAttribute("style", "display: none; position: fixed; bottom: 20px; right: 30px; z-index: 99; border: none; outline: none; background-color: red; color: white; cursor: pointer; padding: 15px; border-radius: 10px; font-size: 18px;");
+    toTopBtn.setAttribute("style", "display: none; position: fixed; bottom: 20px; right: 30px; z-index: 99; color: white; background-color: red; border: none; outline: none;  cursor: pointer; padding: 15px; border-radius: 10px; font-size: 18px;");
     // 5 - Append the button to the page
     document.body.appendChild(toTopBtn);
 }
@@ -197,7 +193,6 @@ function hideNavBar(){
 buildNavBar();
 
 // Scroll to section on link click
-
 // 1 - Get Navbar links
 let navbarAnchorLinks = document.querySelectorAll("a");
 // 2 - Add Click event listener to the link to scroll to the corressponding section
@@ -223,11 +218,9 @@ toTopBtn.addEventListener("click", function(){
     // 1 - Scroll to the top of the page
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-
     // 2 - Deactivate navbar links (as default)
     for(let link of navbarAnchorLinks){
-        link.removeAttribute('style', 'background: #333; color: #fff; transition: ease 0.3s all');
-    }
+        link.removeAttribute('style', 'background: #333; color: #fff; transition: ease 0.3s all');    }
     // 3 - Display navigation bar
     document.querySelector(".navbar__menu").style.display = "initial"; 
 });
@@ -236,10 +229,8 @@ toTopBtn.addEventListener("click", function(){
 document.addEventListener("scroll", function(){
     // 1 - Display scroll up to top button
     scrollToTopButton();
-
     // 2 - Hide navigation bar while not scrolling
     hideNavBar();
-
     // 3 - Check the active section
     checkActiveSection();
 });
