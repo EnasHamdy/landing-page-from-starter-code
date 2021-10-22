@@ -25,16 +25,16 @@
 - Adding a scroll to top button on the page that’s only visible when the user scrolls below the fold of the page.
 
 ### Demo Preview
-[Landing Page Demo](images\Demo-Version.gif)
+[Landing Page Demo](https://github.com/EnasHamdy/landing-page-from-starter-code/blob/main/images/Demo-Version.gif)
 
 ### Screenshot
 
-- [Responsive page](images\Responsive-page.gif)
-- [Scroll to section when clicking on its link in the navigation bar](images\Scroll-to-section.gif)
-- [The active section is shown in a different way](images\Active-class.gif)
-- [Activate the link of navigation bar when its section is active](images\Active-link.gif)
-- [Hide navigation bar if not scrolling](images\Hide-navibar.gif)
-- [Adding scroll to top button](images\Up-button.gif)
+- [Responsive page](https://github.com/EnasHamdy/landing-page-from-starter-code/blob/main/images/Responsive-page.gif)
+- [Scroll to section when clicking on its link in the navigation bar](https://github.com/EnasHamdy/landing-page-from-starter-code/blob/main/images/Scroll-to-section.gif)
+- [The active section is shown in a different way](https://github.com/EnasHamdy/landing-page-from-starter-code/blob/main/images/Active-class.gif)
+- [Activate the link of navigation bar when its section is active](https://github.com/EnasHamdy/landing-page-from-starter-code/blob/main/images/Active-link.gif)
+- [Hide navigation bar if not scrolling](https://github.com/EnasHamdy/landing-page-from-starter-code/blob/main/images/Hide-navibar.gif)
+- [Adding scroll to top button](https://github.com/EnasHamdy/landing-page-from-starter-code/blob/main/images/Up-button.gif)
 
 ### Links
 
