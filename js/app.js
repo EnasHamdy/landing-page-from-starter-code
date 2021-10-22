@@ -45,12 +45,7 @@ function isInView(secElement){
     // 1 - Get the bounds of the element
     var bounding = secElement.getBoundingClientRect();
     // 2 - Check if the element is in the viewport or not
-    if (
-        bounding.top >= 0 &&
-        bounding.left >= 0 &&
-        bounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
-        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-    ) {
+    if (bounding.top >= 0 && bounding.top < (window.innerHeight/3 || document.documentElement.clientHeight/3)) {
         return true;    // The element is in the viewport
     } else {
         return false;   // The element is not in the viewport
