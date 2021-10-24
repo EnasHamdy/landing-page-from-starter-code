@@ -24,8 +24,12 @@
 - Hide fixed navigation bar while not scrolling.
 - Adding a scroll to top button on the page that’s only visible when the user scrolls below the fold of the page.
 
+[(Back to top)](#landing-page)
+
 ### Demo Preview
 [Landing Page Demo](https://github.com/EnasHamdy/landing-page-from-starter-code/blob/main/images/Demo-Version.gif)
+
+[(Back to top)](#landing-page)
 
 ### Screenshot
 
@@ -36,10 +40,14 @@
 - [Hide navigation bar if not scrolling](https://github.com/EnasHamdy/landing-page-from-starter-code/blob/main/images/Hide-navibar.gif)
 - [Adding scroll to top button](https://github.com/EnasHamdy/landing-page-from-starter-code/blob/main/images/Up-button.gif)
 
+[(Back to top)](#landing-page)
+
 ### Links
 
 - Solution URL: https://github.com/EnasHamdy/landing-page-from-starter-code.git
 - Live Site URL: https://enashamdy.github.io/landing-page-from-starter-code/
+
+[(Back to top)](#landing-page)
 
 ## My process
 
@@ -49,10 +57,14 @@
 - CSS custom properties
 - JavaScript & the DOM
 
+[(Back to top)](#landing-page)
+
 ### Useful resources
 
 - [MDN Web Docs](https://developer.mozilla.org/en-US/)
 - [w3schools](https://www.w3schools.com/)
+
+[(Back to top)](#landing-page)
 
 ## Author
 
